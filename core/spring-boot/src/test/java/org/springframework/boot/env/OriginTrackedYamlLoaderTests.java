@@ -137,7 +137,7 @@ class OriginTrackedYamlLoaderTests {
 		assertThat(nullValue.getValue()).isEqualTo("");
 		assertThat(getLocation(nullValue)).isEqualTo("28:13");
 		assertThat(emptyList).isNotNull();
-		assertThat(emptyList.getValue()).isEqualTo("");
+		assertThat(emptyList.getValue()).isEqualTo(List.of());
 		assertThat(getLocation(emptyList)).isEqualTo("29:12");
 	}
 
